@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f6f7fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    text-align: center;
+}
+
+.progress-container{
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 350px;
+}
+
+.progress-container::before{
+    content: '';
+    background-color: var(--line-border-empty);
+    height: 4px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: .4s ease-in;
+}
+
+.progress{
+    background-color: var(--line-border-fill);
+    height: 4px;
+    position: absolute;
+    width: 0%;
+    z-index: -1;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: .4s ease-in;
+}
+
+.circle{
+    background-color: white;
+    color: #999;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: .3s ease;
+}
+
+.circle.active{
+    border-color: var(--line-border-fill);
+    transition: .1s ease-in .4s;
+}
+
+.btn {
+    background-color: var(--line-border-fill);
+    border:0;
+    padding: 8px 30px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5%;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+
+}
+
+.btn:active{
+    transform: scale(0.9);
+}
+
+.btn:focus{
+    outline: 0;
+}
+
+.btn:disabled{
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}
