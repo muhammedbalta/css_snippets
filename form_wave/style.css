@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    background-color: #00AA00;
+}
+
+.container{
+    position: relative;
+    width: 30%;
+    background-color: #008800;
+    padding: 3em;
+}
+
+.form-control{
+    position: relative;
+    margin: 1.7em 0em;
+}
+
+
+.btn{
+    position: relative;
+    background-color: #00cc00;
+    width: 7.5em;
+    padding: 0.5em;
+    font-size: 1em;
+    color: white;
+    width: 100%;
+    border: 0px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.form-control input{
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    color: white;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.form-control input:focus{
+    outline: none;
+}
+
+.form-control label{
+    position: absolute;
+    left: 0em;
+    top: -0.5em;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-control label span{
+    display: inline-block;
+    transition: 0.3s ease-in;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color: #00cc00;
+    transform: translateY(-10px);
+    transition: 0.3s ease-in;
+}
