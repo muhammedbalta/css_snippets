@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(0, 195, 255) 0%, rgb(0, 195, 255) 50%, rgb(0, 89, 255) 50%, rgb(0, 89, 255) 100%);
+}
+
+nav{
+    background-color: white;
+    width: 0px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: width .3s linear;
+    border-radius: 3px;
+}
+
+nav.active{
+    width: 600px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    transform: rotateY(0deg);
+    margin: 10px;
+    opacity: 0;
+    transition: transform .6s linear, opacity .6s linear;
+}
+
+nav.active ul li{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+
+.icon{
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    margin-top: 17px;
+    margin-right: 15px;
+    height: 30px;
+    width: 30px;
+}
+
+.icon .line{
+    position: absolute;
+    width: 20px;
+    top: 10px;
+    left: 5px;
+    height: 2px;
+    background-color: #5290f9;
+    transition: transform .6s linear;
+}
+
+.icon .line2{
+    top: auto;
+    bottom:10px;
+}
+
+nav.active .icon .line1{
+    transform: rotate(-765deg) translateY(5.5px);
+}
+
+nav.active .icon .line2{
+    transform: rotate(765deg) translateY(-5.5px);
+}
+
+.icon:focus{
+    outline:0
+}
