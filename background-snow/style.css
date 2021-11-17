@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #333;
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 45px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+}
+
+.square {
+    position: absolute;
+    top: -100px;
+    background-color: #f2f2f2;
+    animation: pour 3s infinite ease-in-out;
+    border-radius: 50%;
+}
+
+.square:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    left: 1%;
+    animation-delay: 2.5s;
+}
+
+.square:nth-child(2) {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    left: 10%;
+}
+
+.square:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    left: 20%;
+    animation-delay: 1s;
+}
+.square:nth-child(4) {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    left: 30%;
+    animation-delay: .5s;
+}
+.square:nth-child(5) {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    left: 40%;
+    animation-delay: 2s;
+}
+.square:nth-child(6) {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    left: 50%;
+    animation-delay:1s;
+}
+.square:nth-child(7) {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    left: 60%;
+    animation-delay: 1.5s;
+}
+.square:nth-child(8) {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    left: 70%;
+    animation-delay: .5s;
+}
+.square:nth-child(9) {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    left: 80%;
+    animation-delay: 1s;
+}
+.square:nth-child(10) {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    left: 90%;
+    animation-delay: 3s;
+}
+@keyframes pour {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 100%;
+        transform: rotate(180deg);
+        opacity: 0;
+    }
+}
