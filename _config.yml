@@ -53,9 +53,6 @@ header_pages:
       path: about.md
       title: Tets2
 
-deneme:
-  name: Muhammed
-
 pages:
   - about:
       path: about.md
