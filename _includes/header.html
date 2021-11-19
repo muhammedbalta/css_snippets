@@ -9,7 +9,7 @@
       {%- if titles_size > 0 -%}
         {%- assign my_page_path = site.pages | where: "path", 'about.md' | first -%}
         My Page Path: {{my_page_path}}
-        My Page Title: {{titles}}
+        My Page Title: {{my_page_path.title}}
         <nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />
           <label for="nav-trigger">
