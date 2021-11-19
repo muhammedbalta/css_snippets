@@ -2,13 +2,13 @@
     <div class="wrapper">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
-      {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+      {%- assign titles = site.pages | map: 'title' | join: '' -%}
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
   
       {%- if titles_size > 0 -%}
         {%- assign my_page_path = site.pages | where: "path", 'about.md' | first -%}
         My Page Path: {{my_page_path}}
-        My Page Title: {{site.pages | map 'title' | join: '-'}}
+        My Page Title: {{titles}}
         <nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />
           <label for="nav-trigger">
