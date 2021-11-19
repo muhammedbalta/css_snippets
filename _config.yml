@@ -50,15 +50,17 @@ mb:
 # this and add the path to the pages in order as they should show up
 header_pages:
   - about:
-      title: 'Tets'
+      path: about.md
+      title: Tets2
 
 pages:
   - about.md:
-      title: 'Tets1'
+      path: test.md
+      title: Tets1
 
 
 # Build settings
-mb: minima
+theme: mb
 
 plugins:
  - jekyll-feed
