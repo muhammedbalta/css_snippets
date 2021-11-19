@@ -51,12 +51,12 @@ mb:
 header_pages:
   - about:
       path: about.md
-      title: 'Tets2'
+      title: Tets2
 
 pages:
   - about:
       path: about.md
-      title: 'Tets1'
+      title: Tets1
 
 
 # Build settings
