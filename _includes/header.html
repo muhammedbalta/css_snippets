@@ -3,7 +3,6 @@
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-      {%- assign test = site.pages | map: 'title' -%}
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
   
       {%- if titles_size > 0 -%}
@@ -11,7 +10,7 @@
         Path: {{page_paths}}
         Default Path: {{default_paths}}
         Site PAges: {{site.pages}}
-        Test: {{test}}
+        Deneme:{{site.deneme}}
         <nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />
           <label for="nav-trigger">
