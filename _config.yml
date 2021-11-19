@@ -58,7 +58,7 @@ deneme:
 
 pages:
   - about:
-      path: test.md
+      path: about.md
       title: Tets1
 
 
