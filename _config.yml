@@ -52,6 +52,11 @@ header_pages:
   - about:
       title: 'Tets'
 
+pages:
+  - about:
+      title: 'Tets1'
+
+
 # Build settings
 mb: minima
 
