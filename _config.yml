@@ -53,10 +53,11 @@ header_pages:
       path: about.md
       title: Tets2
 
-deneme: "Muhammed"
+deneme:
+  name: uhammed
 
 pages:
-  - about.md:
+  - about:
       path: test.md
       title: Tets1
 
