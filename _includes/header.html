@@ -9,7 +9,7 @@
         Deneme2: {{site.deneme.name}}
         Path: {{page_paths}}
         Default Path: {{default_paths}}
-        Pages: {{site.pages}}
+        Pages: {{site.pages | map: 'path'}}
         <nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />
           <label for="nav-trigger">
