@@ -6,6 +6,9 @@
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
   
       {%- if titles_size > 0 -%}
+        Size: {{titles_size}}
+        Path: {{page_paths}}
+        Default Path: {{default_paths}}
         <nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />
           <label for="nav-trigger">
