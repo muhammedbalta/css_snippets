@@ -107,6 +107,7 @@ body {
     }
 
     100% {
+        margin-left: 45%;
         top: 100%;
         transform: rotate(180deg);
         opacity: 0;
